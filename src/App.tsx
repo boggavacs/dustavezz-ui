@@ -1,10 +1,18 @@
 import './App.css'
-import Dashboard from './pages/dashboard'
+import LeftPanel from './components/LeftPanel'
+import MainPanel from './components/MainPanel'
+import RightPanel from './components/RightPanel'
 
 function App() {
 
   return (
-   <Dashboard />
+<div className="min-h-screen bg-gray-100">
+      <div className="mx-auto flex min-h-screen w-full max-w-[1600px]">
+        <LeftPanel />
+        <MainPanel />
+        <RightPanel />
+      </div>
+    </div>
   )
 }
 
